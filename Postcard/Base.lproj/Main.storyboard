@@ -103,6 +103,15 @@
                                     <action selector="sendMailButtonPressed:" destination="o0D-lj-7e9" eventType="touchUpInside" id="B1T-rz-uls"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKf-NK-OSv">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="155" width="190" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +121,7 @@
                                 <exclude reference="CT8-jJ-XIf"/>
                                 <exclude reference="f9L-UP-YVk"/>
                                 <exclude reference="KYT-v6-OsS"/>
+                                <exclude reference="CKf-NK-OSv"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,12 +131,14 @@
                                 <include reference="CT8-jJ-XIf"/>
                                 <include reference="f9L-UP-YVk"/>
                                 <include reference="KYT-v6-OsS"/>
+                                <include reference="CKf-NK-OSv"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="messageLabel" destination="q4F-Yu-2nO" id="cwS-PK-LFa"/>
                         <outlet property="messageTextField" destination="f9L-UP-YVk" id="EWn-as-LQU"/>
+                        <outlet property="nameLabel" destination="CKf-NK-OSv" id="6H0-lV-eZ1"/>
                         <outlet property="nameTextField" destination="CT8-jJ-XIf" id="mXo-oZ-dfu"/>
                         <outlet property="sendButtonPressed" destination="KYT-v6-OsS" id="fPP-b8-Urq"/>
                     </connections>
